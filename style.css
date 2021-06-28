@@ -1,0 +1,50 @@
+:root {
+    --my-color: #FFFFFF;
+}
+
+body {
+    font-family: 'ヒラギノ角ゴシック', YuGothic, 'メイリオ', Meiryo, 'MS PGothic', sans-serif;
+}
+
+.TopPage {
+    background-color: #A7A9A6;
+    width: 1080px;
+    height: 550px;
+}
+
+.HeaderPhoto {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    background-color: var(--my-color);
+    padding: 5px 5px;
+}
+
+.name {
+    font-size: 100px;
+    margin: 0;
+    color: var(--my-color);
+    line-height: 115px;
+    width: 400px;
+}
+
+.JapaneseNeme,
+.work {
+    font-weight: 200;
+    color: var(--my-color);
+    font-size: 35px;
+    margin: 0;
+}
+
+.main-profile {
+    margin: 0 0 0 70px;
+    display: flex;
+    position: relative;
+}
+
+.main-profile img {
+    position: absolute;
+    left: 385px;
+}
