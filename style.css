@@ -4,12 +4,19 @@
 
 body {
     font-family: 'ヒラギノ角ゴシック', YuGothic, 'メイリオ', Meiryo, 'MS PGothic', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+
+/* NAME記事 */
 
 .TopPage {
     background-color: #A7A9A6;
-    width: 1080px;
+    width: 100%;
+    max-width: 1200px;
     height: 550px;
+    /* margin: 0 auto; */
 }
 
 .HeaderPhoto {
@@ -19,22 +26,21 @@ body {
 
 header img {
     background-color: var(--my-color);
-    padding: 5px 5px;
+    padding: 1% 1%;
 }
 
 .name {
-    font-size: 100px;
+    font-size: 600%;
     margin: 0;
     color: var(--my-color);
-    line-height: 115px;
+    line-height: 115%;
     width: 400px;
 }
 
 .JapaneseNeme,
 .work {
-    font-weight: 200;
     color: var(--my-color);
-    font-size: 35px;
+    font-size: 2.1em;
     margin: 0;
 }
 
@@ -46,5 +52,52 @@ header img {
 
 .main-profile img {
     position: absolute;
-    left: 385px;
+    left: 40%;
+}
+
+
+/* About 記事  */
+
+
+/* overflow: hidden; */
+
+.About {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* overflow: hidden;が効かない */
+
+.About-text {
+    margin: 50px 0 0 80px;
+}
+
+.About-text h1 {
+    font-weight: initial;
+}
+
+.About-text p {
+    max-width: 430px;
+}
+
+.SNS-ions {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    width: 20%;
+    margin-top: 25px;
+}
+
+.About-img {
+    position: absolute;
+    left: 50%;
+}
+
+.mail {
+    font-size: 90%;
 }
