@@ -1,9 +1,10 @@
+@charset "utf-8";
 :root {
     --my-color: #FFFFFF;
 }
 
 body {
-    font-family: 'ヒラギノ角ゴシック', YuGothic, 'メイリオ', Meiryo, 'MS PGothic', sans-serif;
+    font-family: 'ヒラギノ角ゴシック', YuGothic, 'メイリオ', Meiryo, 'MS PGothic', Avenir, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -15,8 +16,8 @@ body {
     background-color: #A7A9A6;
     width: 100%;
     max-width: 1200px;
-    height: 550px;
-    /* margin: 0 auto; */
+    height: 100vh;
+    max-height: 600px;
 }
 
 .HeaderPhoto {
@@ -59,7 +60,7 @@ header img {
 /* About 記事  */
 
 
-/* overflow: hidden; */
+/* overflow: hidden; が効かない*/
 
 .About {
     display: flex;
@@ -67,6 +68,7 @@ header img {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    height: 500px;
 }
 
 
@@ -100,4 +102,131 @@ header img {
 
 .mail {
     font-size: 90%;
+}
+
+
+/* projects */
+
+.project {
+    color: var(--my-color);
+    background-color: #A7A9A6;
+    display: flex;
+}
+
+.interior-img {
+    margin: 0 5% 0 10%;
+}
+
+.Priject-name {
+    font-weight: normal;
+}
+
+.Twitter,
+.NETFLIX,
+.Netfilix-main {
+    margin-top: 10%;
+    font-weight: lighter;
+    max-width: 500px;
+}
+
+.Twitter-title {
+    font-weight: normal;
+    /* font-weight: lighter; */
+    letter-spacing: 4px;
+}
+
+.Test-title,
+.Netfilix-title {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+.Button {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+
+/* font-weight: lighter;が当たらない */
+
+.Button-Website,
+.Button-GitHub,
+.Button-GitHub-black {
+    max-width: 80px;
+    width: 80px;
+    height: 30px;
+    margin: 0 10px;
+    font-weight: lighter;
+    padding: 8px 12px;
+}
+
+.Button-Website {
+    margin-left: 0;
+    background-color: var(--my-color);
+    color: black;
+    border: solid 1px #000;
+}
+
+.Button-GitHub {
+    background-color: #A7A9A6;
+    border: solid 1px #FFFFFF;
+    color: var(--my-color);
+}
+
+
+/* NETFLIX  */
+
+.NETFLIX {
+    display: flex;
+    margin-top: 0;
+    max-width: 1200px;
+}
+
+.Button-GitHub-black {
+    background-color: #303030;
+    color: var(--my-color);
+}
+
+.NETFLIX-img {
+    margin: 0 5% 10% 10%
+}
+
+.Netfilix-main {
+    max-width: 600px;
+    width: 600px;
+}
+
+
+/* Contacts */
+
+nav {
+    background-color: #303030;
+    color: var(--my-color);
+    height: 300px;
+    padding: 10% 0 0 5%;
+}
+
+.phone-icon,
+.pc-icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #656363;
+    height: 40px;
+}
+
+footer>p {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--my-color);
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.icon {
+    margin-right: 20px;
 }
